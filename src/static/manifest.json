@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest.json",
+    "background_color": "#fcfcfc",
+    "theme_color": "#1f7a76",
+    "display": "standalone",
+    "name": "Bentsher",
+    "start_url": ".",
+    "icons": [
+        {
+            "src": "assets/app_logo.png",
+            "type": "image/png",
+            "sizes": "any"
+        }
+    ]
+}

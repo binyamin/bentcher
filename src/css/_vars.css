@@ -1,0 +1,32 @@
+:root {
+    --color-bg: #fcfcfc;
+    --color-text: #111316;
+    --color-accent: #1f7a76;
+
+    --font-serif: /* Not actually supported yet */ ui-serif, serif, emoji;
+    --font-sans: /* Not actually supported yet */ ui-sans-serif, system-ui, sans-serif, emoji;
+    --font-mono: /* Not actually supported yet */ ui-monospace, monospace, emoji;
+    --font-hebrew: 'Noto Serif HebrewVariable', serif, emoji;
+
+    /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1200,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+    --font-step--2: clamp(0.78rem, calc(0.76rem + 0.11vw), 0.84rem);
+    --font-step--1: clamp(0.94rem, calc(0.90rem + 0.20vw), 1.05rem);
+    --font-step-0: clamp(1.13rem, calc(1.06rem + 0.34vw), 1.31rem);
+    --font-step-1: clamp(1.35rem, calc(1.24rem + 0.53vw), 1.64rem);
+    --font-step-2: clamp(1.62rem, calc(1.46rem + 0.78vw), 2.05rem);
+    --font-step-3: clamp(1.94rem, calc(1.72rem + 1.13vw), 2.56rem);
+    --font-step-4: clamp(2.33rem, calc(2.02rem + 1.59vw), 3.20rem);
+    --font-step-5: clamp(2.80rem, calc(2.36rem + 2.19vw), 4.01rem);
+
+    /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1200,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+    --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
+    --space-2xs: clamp(0.56rem, calc(0.52rem + 0.23vw), 0.69rem);
+    --space-xs: clamp(0.88rem, calc(0.83rem + 0.23vw), 1.00rem);
+    --space-s: clamp(1.13rem, calc(1.06rem + 0.34vw), 1.31rem);
+    --space-m: clamp(1.69rem, calc(1.57rem + 0.57vw), 2.00rem);
+    --space-l: clamp(2.25rem, calc(2.11rem + 0.68vw), 2.63rem);
+    --space-xl: clamp(3.38rem, calc(3.17rem + 1.02vw), 3.94rem);
+    --space-2xl: clamp(4.50rem, calc(4.23rem + 1.36vw), 5.25rem);
+    --space-3xl: clamp(6.75rem, calc(6.34rem + 2.05vw), 7.88rem);
+}

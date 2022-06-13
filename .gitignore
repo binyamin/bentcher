@@ -1,0 +1,4 @@
+.vercel/
+src/assets/icons.sprite.svg
+node_modules/
+out/

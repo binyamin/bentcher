@@ -1,0 +1,21 @@
+{
+  "name": "bentsher",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build-icons": "node scripts/icon-sprites.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Binyamin Aron Green (https://binyam.in/)",
+  "license": "MIT",
+  "dependencies": {
+    "@fontsource/noto-serif-hebrew": "^4.5.9"
+  },
+  "devDependencies": {
+    "lucide-static": "^0.61.0",
+    "svg-sprite": "2.0.0-beta5"
+  }
+}

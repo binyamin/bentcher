@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111316" />
+    <meta name="author" content="Binyamin Green" />
+    {# <link rel="manifest" href="/manifest.json" /> #}
+    {# <link rel="icon" href="/assets/app_logo.png" type="image/png" /> #}
+
+    <title>Bentsher - {{ text.title }}</title>
+
+    <link rel="stylesheet" href="/fonts/noto-serif-hebrew/variable.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    {# <script type="module" src="/js/main.js"></script> #}
+    <script defer src="/js/wiring.js"></script>
+</head>
+<body class="page">
+    <main lang="he" dir="auto" class="document">
+        <h1 class="title">{{ text.title }}</h1>
+        {% for section in text.body %}
+        <section id="{{ section.slug }}" class="section">
+            <h2>
+                <button class="trigger repel" aria-expanded="false">
+                    <span>{{section.title}}</span>
+                    {{ comp.icon({ name: 'plus' }) | safe }}
+                </button>
+            </h2>
+            <div class="content" hidden>
+                {% for p in section.body %}
+                    <p>{{ p | safe }}</p>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </main>
+    <footer class="page-footer">
+        <small>Made with love by <a href="https://binyam.in">Binyamin Green</a></small>
+    </footer>
+</body>
+</html>
