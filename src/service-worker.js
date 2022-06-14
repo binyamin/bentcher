@@ -11,7 +11,7 @@ const addResourcesToCache = async (resources) => {
 sw.addEventListener('install', (event) => {
     event.waitUntil(addResourcesToCache([
         '/index.html',
-        '/manifest.json',
+        '/manifest.webmanifest',
         '/js/main.js',
         '/js/wiring.js',
         '/css/style.css',
