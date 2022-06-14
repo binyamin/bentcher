@@ -15,6 +15,7 @@ sw.addEventListener('install', (event) => {
         '/js/main.js',
         '/js/wiring.js',
         '/css/style.css',
+        '/css/style.css.map',
         '/assets/icons.sprite.svg',
         '/assets/logo/logo.svg',
         '/assets/logo/logo.webp',
@@ -24,16 +25,18 @@ sw.addEventListener('install', (event) => {
     ]))
 })
 
-sw.addEventListener('fetch', async (event) => {
-    const r = await caches.match(event.request);
-    console.log(`[Service Worker] Fetching resource: ${event.request.url}`);
-    if (r) {
-        event.respondWith(r)
-    } else {
-        const response = await fetch(event.request);
-        const cache = await caches.open(cacheName);
-        console.log(`[Service Worker] Caching new resource: ${event.request.url}`);
-        cache.put(event.request, response.clone());
-        event.respondWith(response);
-    }
+sw.addEventListener('fetch', (event) => {
+    event.respondWith((async () => {
+        const r = await caches.match(event.request);
+        console.log(`[Service Worker] Fetching resource: ${event.request.url}`);
+        if (r) {
+            return r;
+        } else {
+            const response = await fetch(event.request);
+            const cache = await caches.open('v1');
+            console.log(`[Service Worker] Caching new resource: ${event.request.url}`);
+            cache.put(event.request, response.clone());
+           return response;
+        }
+    })())
 })
