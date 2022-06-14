@@ -23,3 +23,17 @@ sw.addEventListener('install', (event) => {
         '/fonts/noto-serif-hebrew/files/noto-serif-hebrew-hebrew-variable-wghtOnly-normal.woff2',
     ]))
 })
+
+sw.addEventListener('fetch', async (event) => {
+    const r = await caches.match(event.request);
+    console.log(`[Service Worker] Fetching resource: ${event.request.url}`);
+    if (r) {
+        event.respondWith(r)
+    } else {
+        const response = await fetch(event.request);
+        const cache = await caches.open(cacheName);
+        console.log(`[Service Worker] Caching new resource: ${event.request.url}`);
+        cache.put(event.request, response.clone());
+        event.respondWith(response);
+    }
+})
