@@ -2,6 +2,7 @@ import lume from "lume/mod.ts";
 import postcss from "lume/plugins/postcss.ts";
 import jsx from "lume/plugins/jsx.ts";
 import esbuild from "lume/plugins/esbuild.ts";
+import imagick from "lume/plugins/imagick.ts";
 
 import clean_css from './helpers/lume-clean-css.ts';
 
@@ -20,8 +21,6 @@ site.filter('log', console.log);
 site.addEventListener('afterBuild', async (_event) => {
     const fontFiles = [
         'files/noto-serif-hebrew-hebrew-variable-wghtOnly-normal.woff2',
-        'files/noto-serif-hebrew-hebrew-variable-full-normal.woff2',
-        'variable-full.css',
         'variable.css',
     ];
     await Deno.mkdir(site.dest('fonts/noto-serif-hebrew/files'), {
@@ -35,7 +34,7 @@ site.addEventListener('afterBuild', async (_event) => {
     }
 })
 
-site.copy('assets');
+site.copy('assets/logo/logo.svg');
 site.copy('static', '.');
 
 site.use(jsx());
@@ -48,5 +47,6 @@ site.use(postcss({
     }
 }));
 site.use(clean_css());
+site.use(imagick());
 
 export default site;

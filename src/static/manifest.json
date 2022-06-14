@@ -1,15 +1,52 @@
 {
-    "$schema": "https://json.schemastore.org/web-manifest.json",
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
     "background_color": "#fcfcfc",
-    "theme_color": "#1f7a76",
+    "theme_color": "#111316",
     "display": "standalone",
-    "name": "Bentsher",
+    "name": "Just Bentch",
+    "short_name": "JustBentch",
+    "description": "Just a bentcher. That's it.",
     "start_url": ".",
     "icons": [
         {
-            "src": "assets/app_logo.png",
-            "type": "image/png",
+            "src": "assets/logo/logo.svg",
+            "type": "image/svg+xml",
             "sizes": "any"
+        },
+        {
+            "src": "assets/logo/logo.webp",
+            "type": "image/webp",
+            "sizes": "512x512"
+        },
+        {
+            "src": "assets/logo/logo@192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/logo/logo@168.png",
+            "type": "image/png",
+            "sizes": "168x168"
+        },
+        {
+            "src": "assets/logo/logo@144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "assets/logo/logo@96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "assets/logo/logo@72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "assets/logo/logo@48.png",
+            "type": "image/png",
+            "sizes": "48x48"
         }
     ]
 }

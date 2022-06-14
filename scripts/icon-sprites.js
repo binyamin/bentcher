@@ -18,7 +18,7 @@ const spriter = new Spriter({
 /**
  * @type {Array<keyof import('lucide-static/icon-nodes.json')>}
  */
-const icons = ['minus', 'plus'];
+const icons = ['plus'];
 
 for (const name of icons) {
     const iconPath = `./node_modules/lucide-static/icons/${name}.svg`;
@@ -33,5 +33,5 @@ const {result} = await new Promise((resolve, reject) => {
     });
 });
 
-await fs.mkdir('src/assets', { recursive: true });
-await fs.writeFile('src/assets/icons.sprite.svg', result.symbol.sprite.contents, 'utf8');
+await fs.mkdir('src/static/assets', { recursive: true });
+await fs.writeFile('src/static/assets/icons.sprite.svg', result.symbol.sprite.contents, 'utf8');
