@@ -1,5 +1,3 @@
-/// <reference no-default-lib="true"/>
-/// <reference lib="esnext" />
 /// <reference lib="webworker" />
 
 /** @type {ServiceWorkerGlobalScope} */
@@ -11,13 +9,17 @@ const addResourcesToCache = async (resources) => {
 };
 
 sw.addEventListener('install', (event) => {
-    // event.waitUntil(addResourcesToCache(FILES));
     event.waitUntil(addResourcesToCache([
         '/index.html',
         '/manifest.json',
-        '/assets/style.css',
-        '/assets/app_logo.png',
-        '/assets/icons/external-link.svg',
-        '/assets/js/index.js',
+        '/js/main.js',
+        '/js/wiring.js',
+        '/css/style.css',
+        '/assets/icons.sprite.svg',
+        '/assets/logo/logo.svg',
+        '/assets/logo/logo.webp',
+        ...[48, 72, 96, 144, 168, 192].map(n => `/assets/logo/logo-${n}.png`),
+        '/fonts/noto-serif-hebrew/variable.css',
+        '/fonts/noto-serif-hebrew/files/noto-serif-hebrew-hebrew-variable-wghtOnly-normal.woff2',
     ]))
 })
