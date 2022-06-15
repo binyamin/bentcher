@@ -34,7 +34,6 @@ site.addEventListener('afterBuild', async (_event) => {
     }
 })
 
-site.copy('assets/logo/logo.svg');
 site.copy('static', '.');
 
 site.use(jsx());
