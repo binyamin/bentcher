@@ -20,22 +20,16 @@
     <link rel="stylesheet" href="/css/style.css" />
 
     <script type="module" src="/js/main.js"></script>
-    <script defer src="/js/wiring.js"></script>
 </head>
 <body class="page">
     <main lang="he" dir="auto" class="document">
         <h1 class="title">{{ text.title }}</h1>
         {% for section in text.body %}
-        <section id="{{ section.slug }}" class="section">
-            <h2>
-                <button class="trigger repel" aria-expanded="false">
-                    <span>{{section.title}}</span>
-                    {{ comp.icon({ name: 'plus' }) | safe }}
-                </button>
-            </h2>
-            <div class="content" hidden>
+        <section>
+            <h2>{{section.title}}</h2>
+            <div class="content">
                 {% for p in section.body %}
-                    <p>{{ p | safe }}</p>
+                <p>{{ p | safe }}</p>
                 {% endfor %}
             </div>
         </section>

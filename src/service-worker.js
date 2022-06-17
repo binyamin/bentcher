@@ -3,7 +3,7 @@
 /** @type {ServiceWorkerGlobalScope} */
 const sw = self;
 
-const cacheName = 'v1';
+const cacheName = 'v1.1';
 
 const addResourcesToCache = async (resources) => {
     const cache = await caches.open(cacheName);
@@ -15,7 +15,6 @@ sw.addEventListener('install', (event) => {
         '/index.html',
         '/manifest.webmanifest',
         '/js/main.js',
-        '/js/wiring.js',
         '/css/style.css',
         '/css/style.css.map',
         '/assets/icons.sprite.svg',
