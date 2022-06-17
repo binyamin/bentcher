@@ -1,3 +1,7 @@
+html {
+    accent-color: var(--color-accent);
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
