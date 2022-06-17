@@ -26,6 +26,7 @@ body *,
 
 .title {
     font-size: var(--font-step-5);
+    margin-bottom: var(--space-m);
 }
 
 h1 {
@@ -49,7 +50,7 @@ small {
 }
 
 .page {
-    padding-block: 1rem;
+    padding-block: var(--space-s);
     padding-inline: var(--space-m);
 }
 
