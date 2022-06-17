@@ -1,4 +1,20 @@
 {
+  "fmt": {
+    "files": {
+      "exclude": [
+        "node_modules/",
+        "out/"
+      ]
+    }
+  },
+  "lint": {
+    "files": {
+      "exclude": [
+        "node_modules/",
+        "out/"
+      ]
+    }
+  },
   "compilerOptions": {
     "lib": [
       "deno.window"
@@ -8,7 +24,8 @@
   },
   "importMap": "import_map.json",
   "tasks": {
-    "build": "deno run -A https://deno.land/x/lume@v1.9.1/ci.ts",
-    "serve": "deno task build -s"
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "lume": "deno eval \"import 'lume/task.ts'\" --"
   }
 }

@@ -1,4 +1,4 @@
-import * as path from 'https://deno.land/std@0.143.0/path/mod.ts';
+import * as path from 'https://deno.land/std@0.144.0/path/mod.ts';
 
 import { type Site } from 'lume/core.ts';
 import CleanCSS from 'https://esm.sh/clean-css@5.3.0';
