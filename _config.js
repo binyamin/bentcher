@@ -4,7 +4,7 @@ import jsx from "lume/plugins/jsx.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import imagick from "lume/plugins/imagick.ts";
 
-import clean_css from './helpers/lume-clean-css.ts';
+import clean_css from 'https://deno.land/x/lume_cleancss@v0.2.0/mod.ts';
 
 const site = lume({
     src: 'src',
