@@ -5,7 +5,6 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build-icons": "node scripts/icon-sprites.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,9 +12,5 @@
   "license": "MIT",
   "dependencies": {
     "@fontsource/noto-serif-hebrew": "^4.5.9"
-  },
-  "devDependencies": {
-    "lucide-static": "^0.65.0",
-    "svg-sprite": "^2.0.0-beta5"
   }
 }

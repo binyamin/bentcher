@@ -1,5 +1,4 @@
 .vercel/
-src/static/assets/icons.sprite.svg
 node_modules/
 out/
 src/_cache/

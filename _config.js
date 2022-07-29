@@ -1,6 +1,5 @@
 import lume from "lume/mod.ts";
 import postcss from "lume/plugins/postcss.ts";
-import jsx from "lume/plugins/jsx.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import imagick from "lume/plugins/imagick.ts";
 
@@ -8,12 +7,7 @@ import clean_css from 'https://deno.land/x/lume_cleancss@v0.2.0/mod.ts';
 
 const site = lume({
     src: 'src',
-    dest: 'out',
-    cwd: Deno.cwd(),
-    components: {
-        cssFile: '/css/components.css',
-        jsFile: '/js/components.js',
-    }
+    dest: 'out'
 });
 
 site.filter('log', console.log);
@@ -36,7 +30,6 @@ site.addEventListener('afterBuild', async (_event) => {
 
 site.copy('static', '.');
 
-site.use(jsx());
 site.use(esbuild())
 site.use(postcss({
     plugins: [],
