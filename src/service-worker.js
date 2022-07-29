@@ -3,7 +3,7 @@
 /** @type {ServiceWorkerGlobalScope} */
 const sw = self;
 
-const cacheName = 'v1.1';
+const cacheName = 'v1.2.0';
 
 const addResourcesToCache = async (resources) => {
     const cache = await caches.open(cacheName);
@@ -17,7 +17,6 @@ sw.addEventListener('install', (event) => {
         '/js/main.js',
         '/css/style.css',
         '/css/style.css.map',
-        '/assets/icons.sprite.svg',
         '/assets/logo/logo.svg',
         '/assets/logo/logo.webp',
         ...[48, 72, 96, 144, 168, 192].map(n => `/assets/logo/logo-${n}.png`),

@@ -1,3 +1,6 @@
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 if ('serviceWorker' in navigator) {
     try {
         const registration = await navigator.serviceWorker.register('/service-worker.js', {
