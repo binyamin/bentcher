@@ -1,13 +1,16 @@
-lockfileVersion: 5.4
+lockfileVersion: '6.0'
 
-specifiers:
-  '@fontsource/noto-serif-hebrew': ^4.5.9
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource/noto-serif-hebrew': 4.5.9
+  '@fontsource-variable/noto-serif-hebrew':
+    specifier: ^5.0.8
+    version: 5.0.8
 
 packages:
 
-  /@fontsource/noto-serif-hebrew/4.5.9:
-    resolution: {integrity: sha512-QHjDCXLhP9md8gZcX7yH9JV+RJTkxVNw18SaQ1/6G84SoAt+enNcyDoThsuZ3/49x+N4u8L9KKICipsFJIf7Hw==}
+  /@fontsource-variable/noto-serif-hebrew@5.0.8:
+    resolution: {integrity: sha512-NMm5KpSIJ3NT5DwlZMzS9ALxdcGJtbFb7Bb/jJSq+Rn2ZDRqR3+mVeEFtnjUup/VKbZtSyU7UfwYjN2TABQbkA==}
     dev: false

@@ -6,7 +6,7 @@
     --font-serif: /* Not actually supported yet */ ui-serif, serif, emoji;
     --font-sans: /* Not actually supported yet */ ui-sans-serif, system-ui, sans-serif, emoji;
     --font-mono: /* Not actually supported yet */ ui-monospace, monospace, emoji;
-    --font-hebrew: 'Noto Serif HebrewVariable', serif, emoji;
+    --font-hebrew: 'Noto Serif Hebrew Variable', serif, emoji;
 
     /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1200,21,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
     --font-step--2: clamp(0.78rem, calc(0.76rem + 0.11vw), 0.84rem);
