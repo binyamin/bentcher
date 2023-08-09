@@ -20,8 +20,10 @@ sw.addEventListener('install', (event) => {
 		'/assets/logo/logo.svg',
 		'/assets/logo/logo.webp',
 		...[48, 72, 96, 144, 168, 192].map((n) => `/assets/logo/logo-${n}.png`),
-		'/fonts/noto-serif-hebrew/variable.css',
-		'/fonts/noto-serif-hebrew/files/noto-serif-hebrew-hebrew-variable-wghtOnly-normal.woff2',
+		'/fonts/noto-serif-hebrew/wght.css',
+		'/fonts/noto-serif-hebrew/files/noto-serif-hebrew-hebrew-wght-normal.woff2',
+		'/fonts/noto-serif-hebrew/files/noto-serif-hebrew-latin-wght-normal.woff2',
+		'/fonts/noto-serif-hebrew/files/noto-serif-hebrew-latin-ext-wght-normal.woff2',
 	]));
 });
 
