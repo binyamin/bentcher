@@ -1,10 +1,9 @@
 {
-    // "deno.enable": true,
-    "deno.enablePaths": [
-        "src/",
-        "helpers/",
-        "./_config.js"
-    ],
-    "deno.lint": true,
-    "deno.unstable": false
+	// "deno.enable": true,
+	"deno.enablePaths": [
+		"src/",
+		"./_config.js"
+	],
+	"deno.lint": true,
+	"deno.unstable": false
 }

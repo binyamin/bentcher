@@ -1,16 +1,16 @@
 {
-  "name": "bentsher",
-  "version": "0.1.0",
-  "description": "",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Binyamin Aron Green (https://binyam.in/)",
-  "license": "MIT",
-  "dependencies": {
-    "@fontsource/noto-serif-hebrew": "^4.5.9"
-  }
+	"name": "bentsher",
+	"version": "0.1.0",
+	"description": "",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Binyamin Aron Green (https://binyam.in/)",
+	"license": "MIT",
+	"dependencies": {
+		"@fontsource/noto-serif-hebrew": "^4.5.9"
+	}
 }

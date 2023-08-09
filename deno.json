@@ -1,24 +1,16 @@
 {
-  "fmt": {
-    "files": {
-      "exclude": [
-        "node_modules/",
-        "out/"
-      ]
-    }
-  },
-  "lint": {
-    "files": {
-      "exclude": [
-        "node_modules/",
-        "out/"
-      ]
-    }
-  },
-  "importMap": "import_map.json",
-  "tasks": {
-    "build": "deno task lume",
-    "serve": "deno task lume -s",
-    "lume": "deno eval \"import 'lume/task.ts'\" --"
-  }
+	"exclude": [
+		"node_modules/",
+		"out/"
+	],
+	"fmt": {
+		"singleQuote": true,
+		"useTabs": true
+	},
+	"importMap": "import_map.json",
+	"tasks": {
+		"build": "deno task lume",
+		"serve": "deno task lume -s",
+		"lume": "deno eval \"import 'lume/task.ts'\" --"
+	}
 }
