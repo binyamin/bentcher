@@ -1,9 +1,11 @@
 import lume from 'lume/mod.ts';
-import postcss from 'lume/plugins/postcss.ts';
+
 import esbuild from 'lume/plugins/esbuild.ts';
 import imagick from 'lume/plugins/imagick.ts';
+import lightning_css from 'lume/plugins/lightningcss.ts';
+import source_maps from 'lume/plugins/source_maps.ts';
 
-import clean_css from 'https://deno.land/x/lume_cleancss@v0.2.1/mod.ts';
+import { computeTargets } from './helpers/util.ts';
 
 const site = lume({
 	src: 'src',
@@ -33,14 +35,20 @@ site.addEventListener('afterBuild', async (_event) => {
 site.copy('static', '.');
 
 site.use(esbuild());
-site.use(postcss({
-	plugins: [],
-	sourceMap: {
-		sourcesContent: true,
-		inline: false,
+site.use(lightning_css({
+	includes: 'css/includes',
+	options: {
+		targets: computeTargets([
+			'> 0.5%',
+			'last 2 versions',
+			'FF ESR',
+			'not dead',
+		]),
 	},
 }));
-site.use(clean_css());
+site.use(source_maps({
+	sourceContent: true,
+}));
 site.use(imagick());
 
 export default site;
