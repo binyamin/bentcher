@@ -1,6 +1,5 @@
 import lume from 'lume/mod.ts';
 
-import esbuild from 'lume/plugins/esbuild.ts';
 import imagick from 'lume/plugins/imagick.ts';
 import lightning_css from 'lume/plugins/lightningcss.ts';
 import source_maps from 'lume/plugins/source_maps.ts';
@@ -36,7 +35,8 @@ site.addEventListener('afterBuild', async (_event) => {
 
 site.copy('static', '.');
 
-site.use(esbuild());
+site.loadAssets(['.js']);
+
 site.use(lightning_css({
 	includes: 'css/includes',
 	options: {
