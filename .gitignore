@@ -1,4 +1,7 @@
-.vercel/
-node_modules/
-out/
-src/_cache/
+## Config
+/.vercel/
+
+## Generated
+/node_modules/
+/out/
+/src/_cache/

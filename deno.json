@@ -1,5 +1,6 @@
 {
 	"exclude": [
+		".vercel/",
 		"node_modules/",
 		"out/"
 	],
