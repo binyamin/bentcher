@@ -5,6 +5,7 @@ import imagick from 'lume/plugins/imagick.ts';
 import lightning_css from 'lume/plugins/lightningcss.ts';
 import source_maps from 'lume/plugins/source_maps.ts';
 
+import { getLumeVersion } from 'lume/core/utils.ts';
 import { computeTargets } from './helpers/util.ts';
 
 const site = lume({
@@ -12,6 +13,7 @@ const site = lume({
 	dest: 'out',
 });
 
+site.data('lume_version', getLumeVersion());
 site.filter('log', console.log);
 
 site.addEventListener('afterBuild', async (_event) => {
