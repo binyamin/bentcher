@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#111316" />
+	<meta name="author" content="{{ site.author }}" />
+	<meta name="publisher" content="{{ site.author }}" />
+	<meta name="version" content="{{ site.version }}" />
+	<meta name="generator" content="Lume {{ lume_version }}" />
+	<meta name="description" content="{{ site.description | safe }}" />
+
+	<link rel="manifest" href="/manifest.webmanifest" />
+	<link rel="icon" href="/assets/logo/logo-48.png" type="image/png" sizes="48x48" />
+	<link rel="icon" href="/assets/logo/logo-96.png" type="image/png" sizes="96x96" />
+	<link rel="icon" href="/assets/logo/logo.svg" type="image/svg+xml" />
+
+	<title>{{ title ~ " | " if title }}{{ site.title }}</title>
+
+	<link rel="stylesheet" href="/fonts/noto-serif-hebrew/wght.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+
+	<script type="module" src="/js/main.js"></script>
+
+	{# Analytics #}
+	<link rel="preconnect" href="https://stats.binyam.in" />
+	<script
+		async defer
+		data-website-id="53ad3f4f-8e97-4b83-8f5d-db1cdfd6f6bb"
+		src="https://stats.binyam.in/umami.js"
+		data-cache="true"
+		data-domains="bentcher.vercel.app"
+		data-do-not-track="true"
+	></script>
+</head>
+<body class="page">
+	{{ content | safe }}
+	<footer class="page-footer">
+		<small>Made with love by <a href="https://binyam.in">Binyamin Green</a></small>
+	</footer>
+</body>
+</html>

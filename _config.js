@@ -10,6 +10,16 @@ import { computeTargets } from './helpers/util.ts';
 const site = lume({
 	src: 'src',
 	dest: 'out',
+}, {
+	modules: {
+		extensions: {
+			pages: ['.page.js', '.page.ts'],
+		}
+	},
+	nunjucks: {
+		includes: 'templates',
+		extensions: ['.html', '.njk'],
+	},
 });
 
 site.data('lume_version', getLumeVersion());

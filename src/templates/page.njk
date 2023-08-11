@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+---
+
+<main lang="he" dir="rtl" class="document">
+	<h1 class="title">{{ title }}</h1>
+
+	{% for section in body %}
+		<h2>{{section.title}}</h2>
+
+		{% for p in section.body %}
+		<p>{{ p | safe }}</p>
+		{% endfor %}
+	{% endfor %}
+</main>
