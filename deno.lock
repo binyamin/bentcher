@@ -392,14 +392,11 @@
     "https://deno.land/x/lume@v1.18.4/plugins/search.ts": "af3ea229915f3580962c9da6be33ca8e639b8444ce8604769968afd731b9dd3c",
     "https://deno.land/x/lume@v1.18.4/plugins/source_maps.ts": "d38cbbab19984133789628d9e575a8c3d604d8c40ac6976298bec531dd15193b",
     "https://deno.land/x/lume@v1.18.4/plugins/url.ts": "43d3d47896a7322a8dd34572dedb4baa6f73a382594a2ff7c34a3a064dcc6c9e",
-    "https://deno.land/x/lume@v1.18.4/plugins/yaml.ts": "df24aac4098dba258f1ac331a3b16ba488a336eb63c51afed8f59201228d583c",
-    "https://esm.sh/@sindresorhus/slugify@2.1.0": "8560085e8d3d1c18b59af3fbd3aab95c8c6ec6e9e8e8c81a08b5402c82c14fe2",
-    "https://esm.sh/v126/@sindresorhus/slugify@2.1.0/denonext/slugify.mjs": "35467acd701101e970485bdbb86fc3544480b199f3eabfca24266ba26de355e7",
-    "https://esm.sh/v126/@sindresorhus/transliterate@1.6.0/denonext/transliterate.mjs": "f9525c1c35719ad314a72b58f46a7d54cf341402dbc6caa8c06db5afab088600",
-    "https://esm.sh/v126/escape-string-regexp@5.0.0/denonext/escape-string-regexp.mjs": "6080dd39c43a11f999a41172a27b8c58572d747d8276c039d93d4be8b21747a5"
+    "https://deno.land/x/lume@v1.18.4/plugins/yaml.ts": "df24aac4098dba258f1ac331a3b16ba488a336eb63c51afed8f59201228d583c"
   },
   "npm": {
     "specifiers": {
+      "@sindresorhus/slugify@^2.2.1": "@sindresorhus/slugify@2.2.1",
       "browserslist@4.21.9": "browserslist@4.21.9",
       "date-fns@2.30.0": "date-fns@2.30.0",
       "lightningcss@1.21.5": "lightningcss@1.21.5",
@@ -413,6 +410,19 @@
         "integrity": "sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==",
         "dependencies": {
           "regenerator-runtime": "regenerator-runtime@0.13.11"
+        }
+      },
+      "@sindresorhus/slugify@2.2.1": {
+        "integrity": "sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==",
+        "dependencies": {
+          "@sindresorhus/transliterate": "@sindresorhus/transliterate@1.6.0",
+          "escape-string-regexp": "escape-string-regexp@5.0.0"
+        }
+      },
+      "@sindresorhus/transliterate@1.6.0": {
+        "integrity": "sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==",
+        "dependencies": {
+          "escape-string-regexp": "escape-string-regexp@5.0.0"
         }
       },
       "a-sync-waterfall@1.0.1": {
@@ -464,6 +474,10 @@
       },
       "escalade@3.1.1": {
         "integrity": "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==",
+        "dependencies": {}
+      },
+      "escape-string-regexp@5.0.0": {
+        "integrity": "sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==",
         "dependencies": {}
       },
       "lightningcss-darwin-arm64@1.21.5": {

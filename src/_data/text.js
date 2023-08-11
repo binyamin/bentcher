@@ -1,4 +1,4 @@
-import slugify from 'https://esm.sh/@sindresorhus/slugify@2.1.0';
+import slugify from 'npm:@sindresorhus/slugify@^2.2.1';
 import text from './_text.json' assert { type: 'json' };
 
 export const title = text.heTitle;
