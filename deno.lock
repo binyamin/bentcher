@@ -384,7 +384,6 @@
     "https://deno.land/x/lume@v1.18.4/mod.ts": "149acd75b0e3a25347930c547c64e1d122604111d92647962063e15fd3ee1fbe",
     "https://deno.land/x/lume@v1.18.4/plugins/imagick.ts": "68fd0fee4f6ff26d0494b1792311ad84a863618d3d3e5af2701b99abceccd1be",
     "https://deno.land/x/lume@v1.18.4/plugins/json.ts": "ca6bf1bc6d42639f7bdf581dc9318832d8c2eaf83ae3ecdab6f02dfc738896bf",
-    "https://deno.land/x/lume@v1.18.4/plugins/lightningcss.ts": "f0f43633faf23926aefb2871e158a544a2e8ccf6d41a37dc0ff9ede009d2f34d",
     "https://deno.land/x/lume@v1.18.4/plugins/markdown.ts": "31a27f73ed3c79c6c87808ef9e4343c0bbbf896220ee97e88dad4474f091fb39",
     "https://deno.land/x/lume@v1.18.4/plugins/modules.ts": "d31ababab5e35b47fc207685765c9431ddc7bec019061e18b1d36f527e13029d",
     "https://deno.land/x/lume@v1.18.4/plugins/nunjucks.ts": "630f49fac50046f82de2471a1410e47437a5350ee559dc53d804aeb743af977b",
@@ -396,8 +395,7 @@
   },
   "npm": {
     "specifiers": {
-      "@sindresorhus/slugify@^2.2.1": "@sindresorhus/slugify@2.2.1",
-      "browserslist@4.21.9": "browserslist@4.21.9",
+      "browserslist@^4.21.9": "browserslist@4.21.9",
       "date-fns@2.30.0": "date-fns@2.30.0",
       "lightningcss@1.21.5": "lightningcss@1.21.5",
       "markdown-it-attrs@4.1.6": "markdown-it-attrs@4.1.6_markdown-it@13.0.1",
@@ -410,19 +408,6 @@
         "integrity": "sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==",
         "dependencies": {
           "regenerator-runtime": "regenerator-runtime@0.13.11"
-        }
-      },
-      "@sindresorhus/slugify@2.2.1": {
-        "integrity": "sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==",
-        "dependencies": {
-          "@sindresorhus/transliterate": "@sindresorhus/transliterate@1.6.0",
-          "escape-string-regexp": "escape-string-regexp@5.0.0"
-        }
-      },
-      "@sindresorhus/transliterate@1.6.0": {
-        "integrity": "sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==",
-        "dependencies": {
-          "escape-string-regexp": "escape-string-regexp@5.0.0"
         }
       },
       "a-sync-waterfall@1.0.1": {
@@ -474,10 +459,6 @@
       },
       "escalade@3.1.1": {
         "integrity": "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==",
-        "dependencies": {}
-      },
-      "escape-string-regexp@5.0.0": {
-        "integrity": "sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==",
         "dependencies": {}
       },
       "lightningcss-darwin-arm64@1.21.5": {

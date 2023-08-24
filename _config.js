@@ -1,7 +1,7 @@
 import lume from 'lume/mod.ts';
 
 import imagick from 'lume/plugins/imagick.ts';
-import lightning_css from 'lume/plugins/lightningcss.ts';
+import lightning_css from './helpers/plugins/lightningcss.ts';
 import source_maps from 'lume/plugins/source_maps.ts';
 
 import { getLumeVersion } from 'lume/core/utils.ts';
