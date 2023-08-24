@@ -70,7 +70,6 @@ export default function (userOptions?: Partial<Options>) {
 			try {
 				// Process the code with LightningCSS
 				const result = bundle({
-					projectRoot: site.src(),
 					sourceMap: enableSourceMap,
 					...options.options,
 					filename,
