@@ -1,18 +1,11 @@
-html {
-    accent-color: var(--color-accent);
-}
-
 body {
-    background-color: var(--color-bg);
+	accent-color: var(--color-accent);
+	background-color: var(--color-bg);
     color: var(--color-text);
     font-family: var(--font-sans);
     font-size: var(--font-step-0);
+	line-height: 1.6;
     overflow-y: scroll;
-}
-
-body *,
-:lang(he) * {
-    line-height: calc(2ex + 5px);
 }
 
 :lang(he) {
@@ -22,6 +15,7 @@ body *,
 :is(h1,h2,h3,h4,h5,h6) {
     font: inherit;
     margin: 0;
+	line-height: 1.2;
 }
 
 .title {
@@ -58,6 +52,13 @@ small {
     max-width: 100%;
     width: 66ch;
     margin-inline: auto;
+}
+
+.document:lang(he) {
+	width: 55ch;
+	text-align: justify;
+	/* font-size: 122%; */
+	/* TODO: increase font-size above 20px */
 }
 
 .icon {
